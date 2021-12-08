@@ -6,6 +6,7 @@ import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -30,6 +31,7 @@ public class ParameterizedTests {
         Configuration.browserSize = "1900x1000";
     }
 
+    @Disabled
     @ParameterizedTest(name = "{displayName} с логином {0} и паролем {1}")
     @DisplayName("Авторизация на сайте www.reserved.com ")
     @Link(name = "Интернет-магазин Reserved", url = "https://www.reserved.com/ru/ru/")
